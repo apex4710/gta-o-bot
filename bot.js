@@ -213,6 +213,9 @@ client.on("messageCreate", (message) => {
   if (message.content === "!gta-clock") {
     send_clock_embed();
   }
+  if (message.content === "!gta-daily") {
+    postDailyContent();
+  }
 });
 
 client.login(BOT_TOKEN);
