@@ -253,38 +253,6 @@ function postDailyContent() {
     0xeeeee4
   );
   send_collectible_embed(
-    "Madrazo Hits",
-    () =>
-      "The new Madrazo Hit location is now available!\n\n" +
-      madrazo_hits.create_madrazo_hit_message(),
-    "hit",
-    0x6338e8
-  );
-  send_collectible_embed(
-    "Exotic Exports",
-    () =>
-      "The new Exotic Exports vehicle list is now available!\n\n" +
-      exotic_exports.create_exotic_exports_message(),
-    "exotic",
-    0x045cc6
-  );
-  send_collectible_embed(
-    "Street Dealers",
-    () =>
-      "The new Street Dealers locations & stock are now available!\n\n" +
-      street_dealers.create_street_dealers_message(),
-    "dealer",
-    0x760485
-  );
-  send_collectible_embed(
-    "Gun Van",
-    () =>
-      "The new Gun Van location is now available!\n\n" +
-      gun_van.create_gun_van_message(),
-    "van",
-    0x070607
-  );
-  send_collectible_embed(
     "RC Bandito Time Trial",
     () =>
       "The new RC Bandito Time Trial location is now available!\n\n" +
@@ -298,6 +266,38 @@ function postDailyContent() {
       "The new Junk Energy Bike Time Trial location is now available!\n\n" +
       time_trials.create_bike_time_trial_message(),
     "btt",
+    0x6338e8
+  );
+  send_collectible_embed(
+    "Street Dealers",
+    () =>
+      "The new Street Dealers locations & stock are now available!\n\n" +
+      street_dealers.create_street_dealers_message(),
+    "dealer",
+    0x760485
+  );
+  send_collectible_embed(
+    "Exotic Exports",
+    () =>
+      "The new Exotic Exports vehicle list is now available!\n\n" +
+      exotic_exports.create_exotic_exports_message(),
+    "exotic",
+    0x045cc6
+  );
+  send_collectible_embed(
+    "Gun Van",
+    () =>
+      "The new Gun Van location is now available!\n\n" +
+      gun_van.create_gun_van_message(),
+    "van",
+    0x070607
+  );
+  send_collectible_embed(
+    "Madrazo Hits",
+    () =>
+      "The new Madrazo Hit location is now available!\n\n" +
+      madrazo_hits.create_madrazo_hit_message(),
+    "hit",
     0x6338e8
   );
 }
