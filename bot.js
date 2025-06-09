@@ -3,7 +3,7 @@ const app = express();
 
 app.get("/", (req, res) => {
   console.log("🔁 Ping received from UptimeRobot");
-  res.send("Bot is alive");
+  res.send("GTA O Bot is alive");
 });
 
 app.listen(3000, () => {
