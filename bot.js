@@ -300,8 +300,6 @@ function postDailyContent() {
     "btt",
     0x6338e8
   );
-
-  // ... Repeat for all the other data categories (same as in your cron job)
 }
 
 client.on("ready", (c) => {
