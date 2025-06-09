@@ -71,7 +71,7 @@ function send_clock_embed() {
       {
         name: ":sunny: Weather",
         value: `${clock.get_weather()}`,
-      },
+      }
     );
 
   const channel = client.channels.cache.get(CHANNEL_ID);
@@ -91,7 +91,7 @@ function setup_cron_jobs() {
           "The new Treasure Chest locations are now available!\n\n" +
           collectables.create_treasure_chest_message(),
         "treasure",
-        0xeeeee4,
+        0xeeeee4
       );
       send_collectible_embed(
         "Hidden Caches",
@@ -99,7 +99,7 @@ function setup_cron_jobs() {
           "The new Hidden Cache locations are now available!\n\n" +
           collectables.create_hidden_cache_message(),
         "cache",
-        0xeeeee4,
+        0xeeeee4
       );
       send_collectible_embed(
         "Shipwreck",
@@ -107,7 +107,7 @@ function setup_cron_jobs() {
           "The new Shipwreck location is now available!\n\n" +
           collectables.create_shipwrecked_message(),
         "shipwrecked",
-        0xeeeee4,
+        0xeeeee4
       );
       send_collectible_embed(
         "Buried Stashes",
@@ -115,7 +115,7 @@ function setup_cron_jobs() {
           "The new Buried Stash locations are now available!\n\n" +
           collectables.create_buried_stash_message(),
         "shipwrecked",
-        0xeeeee4,
+        0xeeeee4
       );
       send_collectible_embed(
         "Junk Energy Skydives",
@@ -123,7 +123,7 @@ function setup_cron_jobs() {
           "The new Junk Energy Skydive locations are now available!\n\n" +
           collectables.create_skydive_message(),
         "skydive",
-        0xeeeee4,
+        0xeeeee4
       );
       send_collectible_embed(
         "LS Tags",
@@ -131,7 +131,7 @@ function setup_cron_jobs() {
           "The new LS Tag locations are now available!\n\n" +
           collectables.create_ls_tag_message(),
         "tag",
-        0xeeeee4,
+        0xeeeee4
       );
       send_collectible_embed(
         "Madrazo Hits",
@@ -139,7 +139,7 @@ function setup_cron_jobs() {
           "The new Madrazo Hit location is now available!\n\n" +
           madrazo_hits.create_madrazo_hit_message(),
         "hit",
-        0x6338e8,
+        0x6338e8
       );
       send_collectible_embed(
         "Exotic Exports",
@@ -147,7 +147,7 @@ function setup_cron_jobs() {
           "The new Exotic Exports vehicle list is now available!\n\n" +
           exotic_exports.create_exotic_exports_message(),
         "exotic",
-        0x045cc6,
+        0x045cc6
       );
       send_collectible_embed(
         "Street Dealers",
@@ -155,7 +155,7 @@ function setup_cron_jobs() {
           "The new Street Dealers locations & stock are now available!\n\n" +
           street_dealers.create_street_dealers_message(),
         "dealer",
-        0x760485,
+        0x760485
       );
       send_collectible_embed(
         "Gun Van",
@@ -163,7 +163,7 @@ function setup_cron_jobs() {
           "The new Gun Van location is now available!\n\n" +
           gun_van.create_gun_van_message(),
         "van",
-        0x070607,
+        0x070607
       );
       send_collectible_embed(
         "RC Bandito Time Trial",
@@ -171,7 +171,7 @@ function setup_cron_jobs() {
           "The new RC Bandito Time Trial location is now available!\n\n" +
           time_trials.create_rc_time_trial_message(),
         "rctt",
-        0x6338e8,
+        0x6338e8
       );
       send_collectible_embed(
         "Junk Energy Bike Time Trial",
@@ -179,12 +179,12 @@ function setup_cron_jobs() {
           "The new Junk Energy Bike Time Trial location is now available!\n\n" +
           time_trials.create_bike_time_trial_message(),
         "btt",
-        0x6338e8,
+        0x6338e8
       );
     },
     {
-      timezone: "Europe/London",
-    },
+      timezone: "UTC",
+    }
   );
 
   // Every Thursday at 12 PM
@@ -198,8 +198,8 @@ function setup_cron_jobs() {
       }
     },
     {
-      timezone: "Europe/London",
-    },
+      timezone: "UTC",
+    }
   );
 }
 
@@ -215,4 +215,4 @@ client.on("messageCreate", (message) => {
   }
 });
 
-client.login(BOT_TOKEN); // Replace with your bot token
+client.login(BOT_TOKEN);
